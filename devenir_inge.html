@@ -47,9 +47,6 @@
         .footer-col a { color: #fff; text-decoration: none; font-size: 14px; }
         .footer-col a:hover { text-decoration: underline; }
         .footer-bottom { text-align: center; padding-top: 15px; background-color: white; color: black; font-family: Arial, sans-serif; font-size: 14px; }
-html {
-  font-family: Open Sans,sans-serif;
-}
 
 .site-footer {
   background: #000;
@@ -156,8 +153,24 @@ html {
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
-html {
-  font-family: Open Sans,sans-serif;
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-links-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-cities {
+    text-align: left;
+    font-size: 18px;
+  }
+}
+
 }
 /* TEXT_IMG */
 .block-devenir {
@@ -267,19 +280,61 @@ html {
 </section>
 
 </main>
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-col footer-col-logo">
-                <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" alt="ISEN Ouest" class="footer-logo">
-            </div>
-            <div class="footer-links-section">
-                <p class="footer-cities">Texte à venir</p>
-            </div>
-        </div>
-    </footer>
-    <div class="footer-bottom">
-        &copy; 2025 ISEN Ouest
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Colonne 1 : Logo + bouton -->
+    <div class="footer-col footer-col-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
+           alt="ISEN Ouest" class="footer-logo">
+      <a href="ACOMPLETER" class="btn-contact">Nous contacter</a>
     </div>
+
+    <!-- Zone titres + colonnes 2-4 -->
+    <div class="footer-links-section">
+      <!-- Titre général -->
+      <p class="footer-cities">Brest - Caen - Nantes - Paris - Rennes</p>
+
+      <!-- Colonnes de liens -->
+      <div class="footer-links-container">
+        <!-- Colonne 2 : Devenir ingénieur -->
+        <div class="footer-col">
+          <h3>Devenir ingénieur</h3>
+          <ul>
+            <li><a href="ACOMPLETER">Cycle post-bac</a></li>
+            <li><a href="ACOMPLETER">Formation d'ingénieur</a></li>
+            <li><a href="ACOMPLETER">Apprentissage</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : Entreprises -->
+        <div class="footer-col">
+          <h3>Entreprises</h3>
+          <ul>
+            <li><a href="https://isen-ouest.fr/entreprises/recruter/">Recruter un étudiant</a></li>
+            <li><a href="https://isen-ouest.fr/labisen-la-recherche/la-recherche-partenariale/">Recherche partenariale</a></li>
+            <li><a href="http://isen-ouest.fr/taxe-d-apprentissage">Taxe d'apprentissage</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 4 : Étudiants -->
+        <div class="footer-col">
+          <h3>Étudiants</h3>
+          <ul>
+            <li><a href="https://isen-ouest.fr/infos-pratiques/">Informations pratiques</a></li>
+            <li><a href="http://isen-ouest.fr/sportifs">Sportifs</a></li>
+            <li><a href="http://isen-ouest.fr/alumni-aiisen">Alumni AIISEN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-bottom">
+  &copy; 2025 ISEN Ouest – Tous droits réservés.
+</div>
 
 </body>
 </html>
