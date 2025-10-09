@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
     <style>
         /* --- Header --- */
         html { font-family: Open Sans, sans-serif; }
@@ -237,7 +238,18 @@ html {
         </nav>
     </div>
 </header>
+<nav class="breadcrumb" aria-label="Fil d'Ariane">
+    <div class="breadcrumb-container">
+        <div class="breadcrumb-content">
+            <a href="index.html">Accueil</a>
+            <span class="separator">›</span>
+            <span class="current">Devenir ingénieur</span>
+        </div>
 
+        <!-- élément qui remplit la partie droite et affiche la ligne rouge -->
+        <div class="breadcrumb-line" aria-hidden="true"></div>
+    </div>
+</nav>
 <main style="display:flex;justify-content:center;margin-top:0;">
 <section class="block-devenir">
   <div class="block-container">
